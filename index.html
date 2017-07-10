@@ -1,1 +1,259 @@
-Coming soon.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bucket Query is a manages search service for AWS S3. Objects are automatically indexed and can be searched through a simple, secure API.">
+    <meta name="author" content="BucketQuery.com">
+
+    <title>Bucket Query - Index and search your S3 buckets with ease!</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./img/s3.png" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bucketquery.min.css">
+</head>
+
+<body id="home">
+  <!-- Fixed navbar -->
+  <nav id="topbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Bucket Query" height="20" src="./img/s3.png">
+        </a>
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Bucket Query</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a class="page-scroll" href="#home">Home</a></li>
+          <li><a class="page-scroll" href="#about">About</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="page-scroll" href="#join">Join the Beta</a></li>
+          <li><a class="page-scroll" href="#contact">Contact</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <section class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 text-center">
+          <h1 class="large">Searching your S3 buckets has never been so easy.</h1>
+          <hr>
+          <p class="lead">
+            Bucket Query <em>automagically</em> monitors and indexes the data within your S3 buckets.<br>
+            Through a simple and secure RESTful API, Bucket Query can easily integrate into your own
+            website or app.
+          </p>
+        </div>
+      </div>
+      <div class="row" class="col-sm-6 col-sm-offset-3">
+        <!-- Begin MailChimp Signup Form -->
+        <form action="//bucketquery.us12.list-manage.com/subscribe/post?u=fb5497008f47ec12c5c7cb298&amp;id=c23a7b5f4f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_fb5497008f47ec12c5c7cb298_c23a7b5f4f" tabindex="-1" value="">
+          </div>
+
+          <div class="form-group">
+        	   <input type="email" value="" name="EMAIL" class="email form-control input-lg" id="mce-EMAIL" placeholder="email address" required>
+           </div>
+
+          <input type="submit" value="Signup for free beta" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-lg">
+        </form>
+        <!--End mc_embed_signup-->
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-secondary" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <h3 class="uppercase">What is Bucket Query</h3>
+          <hr>
+          <p>
+            Bucket Query is your own private AWS S3 search service. Bucket Query passively monitors your Amazon Web
+            Service (AWS) Simple Storage Search (S3) buckets for changes. As files are manipulated, Bucket Query
+            extracts, indexes, and classifies these files allowing you to easily integrate S3 search into your own
+            website, app, or service. Best of all, Bucket Query supports any and all filetypes!
+           </p>
+           <p><em>Say hello to simple, secure S3 search!</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h3 class="uppercase">How does bucket query compare?</h3>
+          <hr>
+          <img class="solid-border" alt="Native AWS S3 bucket search versus bucket search with Bucket Query" src="./img/search-with-bucket-query.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="image-square left bg-secondary">
+    <div class="col-md-6 image">
+      <div class="background-image-holder">
+        <img alt="Develop S3 search faster with Bucket Query" class="background-image" src="img/code-with-bucketquery-1.jpg">
+      </div>
+    </div>
+    <div class="col-md-6 content">
+      <h3 class="content-header">The Missing Link for AWS S3</h3>
+      <p>
+        The native <a href="http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html">AWS S3 API</a> is fairly
+        limited when it comes to search. The lack of support for bulk searches by key name or metadata can put severe
+        limits on how usefuly your data is.
+      </p>
+      <p>
+        Bucket Query sits between your AWS S3 buckets and your website or app. By automatically monitoring and indexing
+        your data, Bucket Query provides the most comprehensive search service for AWS S3.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="image-square right">
+    <div class="col-md-6 image">
+      <div class="background-image-holder">
+        <img alt="" class="background-image" src="./img/code-with-bucketquery-2.jpg">
+      </div>
+    </div>
+
+    <div class="col-md-6 content">
+      <h3 class="content-header">Develop faster. Search smarter.</h3>
+      <p>
+        Bucket Query was created with developers in mind. With bindings available in the most popular programming
+        languages, adding it to your app could not be simpler. Don't waste time reinveting the whell and rolling your own
+        search service. Try Bucket Query today!
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h3 class="uppercase">Features:</h3>
+          <hr class="primary">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="icon-box">
+            <i class="fa fa-4x fa-code"></i>
+            <h3>Made for Developers</h3>
+            <p>Simple REST API easily integrates into your own website, app, or service.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="icon-box">
+            <i class="fa fa-4x fa-magic"></i>
+            <h3>Automatic</h3>
+            <p>Hands off management. Buckets are monitored and indexed on the fly.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="icon-box">
+            <i class="fa fa-4x fa-lock"></i>
+            <h3>Secure</h3>
+            <p>Authentication, authorization, and end-to-end encryption protect your data.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="icon-box">
+            <i class="fa fa-4x fa-life-ring"></i>
+            <h3>Free Support</h3>
+            <p>Dedicated team here to help no matter how much data you have. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="join">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 text-center">
+          <h2>Join the Bucket Query Beta Program</h2>
+          <hr>
+          <p class="lead">Sign up below to join the list of upcoming beta testers. We'll be adding additional testing groups soon.</p>
+
+          <!-- Begin MailChimp Signup Form -->
+          <form action="//bucketquery.us12.list-manage.com/subscribe/post?u=fb5497008f47ec12c5c7cb298&amp;id=c23a7b5f4f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_fb5497008f47ec12c5c7cb298_c23a7b5f4f" tabindex="-1" value="">
+            </div>
+
+            <div class="form-group">
+          	   <input type="email" value="" name="EMAIL" class="email form-control input-lg" id="mce-EMAIL" placeholder="email address" required>
+             </div>
+
+            <input type="submit" value="Signup for free beta" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-lg">
+          </form>
+          <!--End mc_embed_signup-->
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="bg-dark" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+          <h3 class="uppercase">Get in Touch</h3>
+          <hr>
+          <p>Looking for more information? That's great. Drop us a line and we'll get back to you as soon as possible!</p>
+          <i class="fa fa-envelope-o fa-4x sr-contact"></i>
+          <p>
+            <a href="mailto:%63&#111;&#110;tact&#64;&#98;&#117;c%6b&#101;tq&#117;e%72y%2e%63o%6d">contact@bucketquery.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark">
+    <p class="text-muted">&copy; Bucket Query 2017 Bucket Query | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-88372577-3', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/bucketquery.min.js"></script>
+
+</body>
+</html>

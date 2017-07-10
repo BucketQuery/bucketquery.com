@@ -1,0 +1,258 @@
+@import "variables.less";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oxygen');
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Oxygen", sans-serif;
+}
+
+h1.large {
+    font-size: 72px;
+    line-height: 80px;
+    font-weight: 100;
+}
+
+p {
+    font-size: 16px;
+
+    &.lead {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+}
+
+hr {
+    border-color: @theme-primary;
+    border-width: 3px;
+    max-width: 50px;
+}
+
+footer {
+    text-align: center;
+}
+
+section.header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-image: url('../img/header.jpg');
+    text-align: center;
+    color: white;
+
+
+    @media (min-width: 768px) {
+        min-height: 80%;
+    }
+}
+
+a {
+    color: @theme-secondary;
+
+    &:visited {
+        color: @theme-secondary-darker;
+    }
+
+    &:hover {
+        color: @theme-secondary-darker;
+    }
+
+    &:active {
+        color: @theme-secondary;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .navbar-default {
+        &.affix-top {
+            background: transparent;
+
+            .navbar-brand {
+                color: #fff;
+            }
+
+            .navbar-nav {
+                > li {
+                    a {
+                        color: #fff;
+
+                        &:focus,
+                        &:hover {
+                            background: transparent;
+                            color: @theme-secondary;
+                        }
+                    }
+
+                    &.active {
+                        a {
+                            background: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.btn-primary {
+    background-color: @theme-primary;
+    border-color: @theme-primary-darker;
+
+    &:hover,
+    &:active {
+        background-color: @theme-primary-darker;
+        border-color: @theme-primary-darker;
+    }
+}
+
+section, footer {
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+section {
+    padding: 96px 0;
+}
+
+footer {
+    padding: 48px 0;
+}
+
+.bg-dark {
+    color: @bg-dark-color;
+    background-color: @bg-dark;
+}
+
+.bg-secondary {
+    color: @bg-secondary-color;
+    background-color: @bg-secondary;
+}
+
+.image-square {
+    height: 50vw;
+    max-height: 640px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.image-square .image,
+.image-square > .content {
+    position: absolute;
+}
+
+.image-square .image {
+    height: 100%;
+}
+.image-square > .content {
+    padding: 0 10%;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+    -webkit-transform: translate3d(0, -50%, 0);
+    -moz-transform: translate3d(0, -50%, 0);
+
+    > .content-header {
+        padding-bottom: 10px;
+    }
+}
+
+.image-square.left .image {
+  left: 0;
+}
+.image-square.left > .content {
+  right: 0;
+}
+.image-square.right .image {
+  right: 0;
+}
+.image-square.right > .content {
+  left: 0;
+}
+
+@media all and (max-width: 990px) {
+    .image-square {
+        height: auto;
+        max-height: 100000px;
+        padding-bottom: 48px;
+    }
+    .image-square .image,
+    .image-square > .content {
+        position: relative;
+    }
+    .image-square .image {
+        height: 100vw;
+        margin-bottom: 48px;
+        max-height: 500px;
+    }
+    .image-square > .content {
+        top: 0;
+        transform: none;
+        -webkit-transform: none;
+        padding: 0 20%;
+    }
+}
+
+.background-image-holder {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #292929;
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.background-image-holder img {
+    display: none;
+}
+
+.background-image-holder.fadeIn {
+    opacity: 1;
+}
+
+.icon-box {
+    i {
+        color: @theme-primary;
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.solid-border {
+    border: 1px solid @theme-primary;
+}
